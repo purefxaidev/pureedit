@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>PureEdit — แก้ภาพ AI บนมือถือ by PureFxAi</title>
+<meta name="description" content="PureEdit แอป Android แก้ภาพและสร้างภาพด้วย AI บนเครื่อง ไม่ส่งรูปขึ้นคลาวด์ โดย PureFxAi">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+<canvas id="aurora" aria-hidden="true"></canvas>
+<div class="bg"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span></div>
+
+<nav class="nav glass">
+  <a class="brand" href="#"><img src="assets/icon-180.png" alt="" width="34" height="34"><span>PureEdit</span></a>
+  <div class="links">
+    <a href="#features" data-i18n="nav.features">ฟีเจอร์</a>
+    <a href="#reqs" data-i18n="nav.reqs">ความต้องการ</a>
+    <a href="#install" data-i18n="nav.install">ติดตั้ง</a>
+    <a href="#faq" data-i18n="nav.faq">คำถาม</a>
+  </div>
+  <div class="nav-r">
+    <button id="lang" class="lang" type="button" aria-label="Switch language">
+      <span data-l="th" class="on">TH</span><span data-l="en">EN</span>
+    </button>
+    <a class="btn sm" id="nav-dl" href="#download" data-i18n="nav.dl">ดาวน์โหลด</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-text reveal">
+    <span class="pill" data-i18n="hero.pill">เวอร์ชัน 1.0.0 · Android 8+ · arm64</span>
+    <h1 data-i18n="hero.h1">แก้ภาพด้วย AI<br><span class="grad">บนมือถือเลย</span></h1>
+    <p data-i18n="hero.p">PureEdit สร้างและแก้ภาพด้วย AI บนเครื่อง ไม่ส่งรูปขึ้นคลาวด์ พิมพ์สั้นๆ ภาษาไทยหรืออังกฤษ — แอปขยายพรอมต์ให้อัตโนมัติ พร้อมปรับแต่งความสว่าง สี หมุน ครอป</p>
+    <div class="cta">
+      <a class="btn big" id="hero-dl" href="#download">
+        <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+        <span data-i18n="hero.cta">ดาวน์โหลด APK ฟรี</span>
+      </a>
+      <a class="btn ghost" href="#features" data-i18n="hero.more">ดูฟีเจอร์</a>
+    </div>
+    <small class="muted" data-i18n="hero.note">ไฟล์ PureEdit-1.0.0.apk · เซ็นแล้ว · ติดตั้งเองได้ · ไม่ผ่าน Google Play</small>
+  </div>
+  <div class="hero-art reveal">
+    <div class="phone glass">
+      <div class="ph" data-label="PureEdit">
+        <img src="assets/demo_app.png" alt="PureEdit app" width="360" height="720" loading="eager">
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="features">
+  <h2 class="reveal" data-i18n="f.h2">ฟีเจอร์หลัก <span class="grad">บนเครื่องคุณ</span></h2>
+  <div class="grid">
+    <div class="card glass reveal"><i>✨</i><h3 data-i18n="f1.h">แก้ภาพด้วย AI</h3><p data-i18n="f1.p">เปลี่ยนพื้นหลัง ชุด ท่าทาง จาก 1–2 ภาพอ้างอิง — ประมวลผลบนมือถือ</p></div>
+    <div class="card glass reveal"><i>🎨</i><h3 data-i18n="f2.h">สร้างภาพจากข้อความ</h3><p data-i18n="f2.p">พิมพ์สั้นๆ แล้ว PureEdit ขยายพรอมต์ให้อัตโนมัติ รองรับไทยและอังกฤษ</p></div>
+    <div class="card glass reveal"><i>🔒</i><h3 data-i18n="f3.h">ไม่ส่งรูปขึ้นคลาวด์</h3><p data-i18n="f3.p">ทุกอย่างรันบนเครื่อง คุณควบคุมข้อมูลรูปภาพเองทั้งหมด</p></div>
+    <div class="card glass reveal"><i>⚡</i><h3 data-i18n="f4.h">โหมดเร็ว 6 สเต็ป</h3><p data-i18n="f4.p">โหมดเร็วช่วยให้ได้ผลลัพธ์เร็วขึ้นบนมือถือแรงๆ</p></div>
+    <div class="card glass reveal"><i>🎛️</i><h3 data-i18n="f5.h">ปรับแต่งรูปภาพ</h3><p data-i18n="f5.p">ความสว่าง คอนทราสต์ ความอิ่มสี หมุน และครอป ก่อนบันทึก</p></div>
+    <div class="card glass reveal"><i>📦</i><h3 data-i18n="f6.h">ติดตั้งแพ็กเกจในแอป</h3><p data-i18n="f6.p">ดาวน์โหลดแพ็กเกจ AI ในแอป พร้อมแถบความคืบหน้า (ประมาณ 10–15 GB)</p></div>
+  </div>
+</section>
+
+<section class="showcase">
+  <div class="row reveal">
+    <div class="ph wide art"><img src="assets/sample_edit1.png" alt="ตัวอย่างแก้ภาพ" loading="lazy"></div>
+    <div>
+      <h2 data-i18n="s1.h">แก้ภาพ <span class="grad">ตามที่บอก</span></h2>
+      <p data-i18n="s1.p">เลือกภาพ บอกสั้นๆ ว่าจะเปลี่ยนอะไร PureEdit ขยายคำสั่งให้เป็นพรอมต์ที่แข็งแรง แล้วแก้บนเครื่อง</p>
+    </div>
+  </div>
+  <div class="row rev reveal">
+    <div class="ph wide art"><img src="assets/sample_edit2.png" alt="ตัวอย่างท่าทาง" loading="lazy"></div>
+    <div>
+      <h2 data-i18n="s2.h">พรอมต์อัตโนมัติ <span class="grad">ทุกภาษา</span></h2>
+      <p data-i18n="s2.p">พิมพ์ไทย อังกฤษ หรือผสม — แอปขยายเป็นพรอมต์คุณภาพสูง คุณยังแก้ข้อความที่ขยายแล้วได้อีกก่อนกดสร้าง</p>
+    </div>
+  </div>
+  <div class="row reveal">
+    <div class="ph wide art"><img src="assets/sample_edit3.png" alt="ตัวอย่างชุด" loading="lazy"></div>
+    <div>
+      <h2 data-i18n="s3.h">ตัวอย่างจากเอกสาร <span class="grad">(labeled)</span></h2>
+      <p data-i18n="s3.p">ภาพตัวอย่างด้านบนมาจากแกลเลอรีเอกสารของรันไทม์ต้นทาง — เป็นตัวอย่างความสามารถ ไม่ใช่ผลจำลอง</p>
+    </div>
+  </div>
+</section>
+
+<section id="reqs">
+  <h2 class="reveal" data-i18n="r.h2">ความต้องการ <span class="grad">ของเครื่อง</span></h2>
+  <div class="grid">
+    <div class="card glass reveal"><i>📱</i><h3 data-i18n="r1.h">Android 8+</h3><p data-i18n="r1.p">รองรับเฉพาะ arm64 (64-bit)</p></div>
+    <div class="card glass reveal"><i>🧠</i><h3 data-i18n="r2.h">RAM 12 GB+</h3><p data-i18n="r2.p">แนะนำ 12–16 GB เพื่อความเสถียร</p></div>
+    <div class="card glass reveal"><i>🎮</i><h3 data-i18n="r3.h">GPU OpenCL</h3><p data-i18n="r3.p">เร่งการประมวลผลภาพบน GPU</p></div>
+    <div class="card glass reveal"><i>💾</i><h3 data-i18n="r4.h">พื้นที่ ~11 GB+</h3><p data-i18n="r4.p">สำหรับแพ็กเกจ AI (ติดตั้งในแอป)</p></div>
+  </div>
+  <p class="center muted reveal" style="margin-top:20px" data-i18n="r.warn">⚠️ แพ็กเกจ AI มีขนาดใหญ่ (~10–15 GB) และใช้เวลาติดตั้ง — แนะนำ Wi‑Fi และแบตเหลือพอ</p>
+</section>
+
+<section id="install">
+  <h2 class="reveal" data-i18n="i.h2">ติดตั้งใน <span class="grad">3 ขั้นตอน</span></h2>
+  <div class="steps">
+    <div class="step glass reveal"><b>1</b><h3 data-i18n="i1.h">ดาวน์โหลด APK</h3><p data-i18n="i1.p">กดปุ่มดาวน์โหลดบนมือถือ Android 8+ arm64</p></div>
+    <div class="step glass reveal"><b>2</b><h3 data-i18n="i2.h">อนุญาตแหล่งที่ไม่รู้จัก</h3><p data-i18n="i2.p">ตั้งค่า › แอป › เบราว์เซอร์ › ติดตั้งแอปที่ไม่รู้จัก › อนุญาต</p></div>
+    <div class="step glass reveal"><b>3</b><h3 data-i18n="i3.h">ติดตั้งแพ็กเกจ AI</h3><p data-i18n="i3.p">เปิดแอป › แท็บติดตั้ง › เลือกแพ็กเกจ › กดติดตั้ง แล้วรอแถบความคืบหน้า</p></div>
+  </div>
+</section>
+
+<section id="license" class="reveal">
+  <div class="card glass" style="max-width:760px;margin:0 auto;padding:28px">
+    <h3 data-i18n="lic.h">ใบอนุญาต</h3>
+    <p data-i18n="lic.p" style="opacity:.8;margin-top:8px">น้ำหนักโมเดลอยู่ภายใต้ Qwen Research License — สำหรับงานวิจัย / ไม่ใช่เชิงพาณิชย์ โปรดอ่านข้อกำหนดก่อนใช้งานเชิงพาณิชย์ โค้ดแอป PureEdit โดย PureFxAi อิงรันไทม์โอเพนซอร์ส (Apache-2.0)</p>
+  </div>
+</section>
+
+<section id="faq">
+  <h2 class="reveal" data-i18n="q.h2">คำถามที่พบบ่อย</h2>
+  <div class="faq">
+    <details class="glass reveal"><summary data-i18n="q1.q">PureEdit ฟรีไหม?</summary><p data-i18n="q1.a">ดาวน์โหลดและติดตั้งแอปได้ฟรี แพ็กเกจ AI ดาวน์โหลดในแอป (ใหญ่ ~10–15 GB)</p></details>
+    <details class="glass reveal"><summary data-i18n="q2.q">รูปถูกส่งขึ้นเซิร์ฟเวอร์ไหม?</summary><p data-i18n="q2.a">ไม่ — การสร้าง/แก้ภาพและปรับแต่งรันบนเครื่อง คุณ แพ็กเกจ AI ดาวน์โหลดครั้งแรกจากแหล่งสาธารณะเท่านั้น</p></details>
+    <details class="glass reveal"><summary data-i18n="q3.q">ทำไมไม่มีใน Play Store?</summary><p data-i18n="q3.a">ตอนนี้แจกเป็น APK โดยตรงสำหรับทดสอบ</p></details>
+    <details class="glass reveal"><summary data-i18n="q4.q">เครื่องสเปกต่ำใช้ได้ไหม?</summary><p data-i18n="q4.a">แนะนำ RAM 12GB+ และ GPU OpenCL เครื่องต่ำกว่านี้อาจเอาต์ออฟเมมโมรี</p></details>
+    <details class="glass reveal"><summary data-i18n="q5.q">รองรับ iPhone ไหม?</summary><p data-i18n="q5.a">ตอนนี้มีเฉพาะ Android arm64</p></details>
+  </div>
+</section>
+
+<section id="download" class="final glass reveal">
+  <img src="assets/icon-512.png" alt="" width="96" height="96" style="border-radius:22px;margin-bottom:14px">
+  <h2 data-i18n="fin.h">พร้อมแก้ภาพบนเครื่องแล้วหรือยัง?</h2>
+  <a class="btn big" id="final-dl" href="PureEdit-1.0.0.apk" data-i18n="fin.cta">ดาวน์โหลด PureEdit 1.0.0</a>
+  <p class="muted" style="margin-top:12px" data-i18n="fin.note">ลิงก์อัปเดตอัตโนมัติจาก version.json</p>
+</section>
+
+<footer>
+  <img src="assets/icon-180.png" alt="" width="24" height="24" style="border-radius:6px">
+  © PureFxAi · PureEdit
+</footer>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

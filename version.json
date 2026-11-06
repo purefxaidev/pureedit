@@ -1,0 +1,14 @@
+{
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "sha256": "088649746ec9cd3729d0937708525e619ae41ab9fffb4b79e0fb6110f92ecffc",
+  "apkUrl": "https://github.com/purefxaidev/pureedit/releases/download/v1.0.0/PureEdit-1.0.0.apk",
+  "apkFile": "PureEdit-1.0.0.apk",
+  "sizeBytes": 3860402,
+  "minSupportedVersionCode": 1,
+  "changelog": {
+    "th": "เปิดตัว PureEdit · สร้าง/แก้ภาพ AI บนเครื่อง · ขยายพรอมต์อัตโนมัติ · ปรับแต่งแสงสีหมุนครอป · ติดตั้งแพ็กเกจในแอป",
+    "en": "PureEdit launch · on-device AI generate/edit · auto prompt enhancer · brightness/color/rotate/crop · in-app AI pack install"
+  },
+  "publishedAt": "2026-11-06T00:00:00Z"
+}
