@@ -1,11 +1,11 @@
 window.I18N={
 th:{
 "nav.features":"ฟีเจอร์","nav.reqs":"ความต้องการ","nav.install":"ติดตั้ง","nav.faq":"คำถาม","nav.dl":"ดาวน์โหลด",
-"hero.pill":"เวอร์ชัน 1.0.0 · Android 8+ · arm64",
+"hero.pill":"เวอร์ชัน 1.0.1 · Android 8+ · arm64",
 "hero.h1":"แก้ภาพด้วย AI<br><span class=\"grad\">บนมือถือเลย</span>",
-"hero.p":"PureEdit สร้างและแก้ภาพด้วย AI บนเครื่อง ไม่ส่งรูปขึ้นคลาวด์ พิมพ์สั้นๆ ภาษาไทยหรืออังกฤษ — แอปขยายพรอมต์ให้อัตโนมัติ พร้อมปรับแต่งความสว่าง สี หมุน ครอป",
+"hero.p":"PureEdit สร้างและแก้ภาพด้วย AI บนเครื่อง ไม่ส่งรูปขึ้นคลาวด์ พิมพ์สั้นๆ ภาษาไทย — แอปแปลงเป็นพรอมต์อังกฤษทันที · แพ็กเบา ~10GB · ลบแพ็กเกจได้หมดจด · ตรวจอัปเดตในแอป",
 "hero.cta":"ดาวน์โหลด APK ฟรี","hero.more":"ดูฟีเจอร์",
-"hero.note":"ไฟล์ PureEdit-1.0.0.apk · เซ็นแล้ว · ติดตั้งเองได้ · ไม่ผ่าน Google Play",
+"hero.note":"ไฟล์ PureEdit-1.0.1.apk · เซ็นแล้ว · ติดตั้งเองได้ · ไม่ผ่าน Google Play",
 "f.h2":"ฟีเจอร์หลัก <span class=\"grad\">บนเครื่องคุณ</span>",
 "f1.h":"แก้ภาพด้วย AI","f1.p":"เปลี่ยนพื้นหลัง ชุด ท่าทาง จาก 1–2 ภาพอ้างอิง — ประมวลผลบนมือถือ",
 "f2.h":"สร้างภาพจากข้อความ","f2.p":"พิมพ์สั้นๆ แล้ว PureEdit ขยายพรอมต์ให้อัตโนมัติ รองรับไทยและอังกฤษ",
@@ -33,15 +33,15 @@ th:{
 "q3.q":"ทำไมไม่มีใน Play Store?","q3.a":"ตอนนี้แจกเป็น APK โดยตรงสำหรับทดสอบ",
 "q4.q":"เครื่องสเปกต่ำใช้ได้ไหม?","q4.a":"แนะนำ RAM 12GB+ และ GPU OpenCL เครื่องต่ำกว่านี้อาจเอาต์ออฟเมมโมรี",
 "q5.q":"รองรับ iPhone ไหม?","q5.a":"ตอนนี้มีเฉพาะ Android arm64",
-"fin.h":"พร้อมแก้ภาพบนเครื่องแล้วหรือยัง?","fin.cta":"ดาวน์โหลด PureEdit 1.0.0","fin.note":"ลิงก์อัปเดตอัตโนมัติจาก version.json"
+"don.h":"💚 สนับสนุน PureFxAi (USDT)","don.net":"<b>Network: Ethereum (ERC20) only</b> / เครือข่าย Ethereum (ERC20) เท่านั้น","don.warn":"⚠️ ส่งเฉพาะ USDT ผ่าน ERC20 เท่านั้น เครือข่ายหรือเหรียญอื่นอาจสูญหายถาวร<br>การบริจาคเป็นความสมัครใจ ไม่ใช่การลงทุน ไม่มีผลตอบแทน","fin.h":"พร้อมแก้ภาพบนเครื่องแล้วหรือยัง?","fin.cta":"ดาวน์โหลด PureEdit 1.0.1","fin.note":"ลิงก์อัปเดตอัตโนมัติจาก version.json"
 },
 en:{
 "nav.features":"Features","nav.reqs":"Requirements","nav.install":"Install","nav.faq":"FAQ","nav.dl":"Download",
-"hero.pill":"Version 1.0.0 · Android 8+ · arm64",
+"hero.pill":"Version 1.0.1 · Android 8+ · arm64",
 "hero.h1":"AI image edit<br><span class=\"grad\">right on your phone</span>",
-"hero.p":"PureEdit generates and edits images with on-device AI — nothing uploaded. Type a short intent in Thai or English; the app auto-expands it into a strong prompt. Then tweak brightness, color, rotate and crop.",
+"hero.p":"PureEdit generates and edits images with on-device AI — nothing uploaded. Type a short Thai (or other) intent — the app immediately expands it into an English prompt. Slim ~10GB pack, clean uninstall, in-app updates.",
 "hero.cta":"Download free APK","hero.more":"See features",
-"hero.note":"PureEdit-1.0.0.apk · signed · sideload · not on Google Play",
+"hero.note":"PureEdit-1.0.1.apk · signed · sideload · not on Google Play",
 "f.h2":"Core features <span class=\"grad\">on your device</span>",
 "f1.h":"AI image edit","f1.p":"Change background, outfit or pose from 1–2 references — all on the phone",
 "f2.h":"Text → image","f2.p":"Type briefly; PureEdit auto-enhances the prompt. Thai and English supported",
@@ -69,5 +69,5 @@ en:{
 "q3.q":"Why not on Play Store?","q3.a":"Distributed as a direct APK for testing for now.",
 "q4.q":"Low-end phones?","q4.a":"12GB+ RAM and OpenCL GPU recommended; weaker devices may OOM.",
 "q5.q":"iPhone?","q5.a":"Android arm64 only for now.",
-"fin.h":"Ready to edit on-device?","fin.cta":"Download PureEdit 1.0.0","fin.note":"Download link updates from version.json"
+"don.h":"💚 Support PureFxAi (USDT)","don.net":"<b>Network: Ethereum (ERC20) only</b>","don.warn":"⚠️ Send only USDT via ERC20. Other networks or tokens may be lost permanently.<br>Donations are voluntary — not an investment, no returns.","fin.h":"Ready to edit on-device?","fin.cta":"Download PureEdit 1.0.1","fin.note":"Download link updates from version.json"
 }};

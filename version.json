@@ -1,14 +1,14 @@
 {
-  "versionCode": 1,
-  "versionName": "1.0.0",
-  "sha256": "088649746ec9cd3729d0937708525e619ae41ab9fffb4b79e0fb6110f92ecffc",
-  "apkUrl": "https://github.com/purefxaidev/pureedit/releases/download/v1.0.0/PureEdit-1.0.0.apk",
-  "apkFile": "PureEdit-1.0.0.apk",
-  "sizeBytes": 3860402,
+  "versionCode": 2,
+  "versionName": "1.0.1",
+  "sha256": "809262b36764222fa49a9c5653deb2a31477be6529df9db439e03b2498909efe",
+  "apkUrl": "https://github.com/purefxaidev/pureedit/releases/download/v1.0.1/PureEdit-1.0.1.apk",
+  "apkFile": "PureEdit-1.0.1.apk",
+  "sizeBytes": 3882266,
   "minSupportedVersionCode": 1,
   "changelog": {
-    "th": "เปิดตัว PureEdit · สร้าง/แก้ภาพ AI บนเครื่อง · ขยายพรอมต์อัตโนมัติ · ปรับแต่งแสงสีหมุนครอป · ติดตั้งแพ็กเกจในแอป",
-    "en": "PureEdit launch · on-device AI generate/edit · auto prompt enhancer · brightness/color/rotate/crop · in-app AI pack install"
+    "th": "UI ใหม่ · ลบแพ็กเกจ AI หมดจด · แพ็กเบา (โหมดเร็ว+ตัวถอดรหัสเล็ก) · ขนาด Micro/Nano · พรอมต์อังกฤษอัตโนมัติ · ตรวจอัปเดตในแอป · บริจาค USDT ERC20",
+    "en": "Polished UI · clean AI pack uninstall · slim pack (fast+tiny decoder) · Micro/Nano sizes · English auto-prompts · in-app update check · USDT ERC20 donate"
   },
-  "publishedAt": "2026-11-06T00:00:00Z"
+  "publishedAt": "2026-11-06T01:00:00Z"
 }
